@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<h2>Snackbar / Toast</h2>
+	<p>Snackbars are often used as a tooltips/popups to show a message at the bottom of the screen.</p>
+	<p>Click on the button to show the snackbar. It will disappear after 3 seconds.</p>
+
+	<button onclick="myFunction()">Show Snackbar</button>
+
+	<div id="snackbar">Some text some message..</div>
+
+	
+	<!-- js -->
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script type='text/javascript'>
+			function myFunction() {
+			    var x = document.getElementById("snackbar")
+			    x.className = "show";
+			    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+			}
+	</script>
+</body>
+</html>
